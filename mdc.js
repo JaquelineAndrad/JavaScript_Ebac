@@ -57,7 +57,7 @@ console.log(divisoresB);
 // Array vazio para divisores comuns
 let divisoresComuns = [];
 
-// Percorre divisores de A
+//length =comprimento, percorre divisores de A
 for (let i = 0; i < divisoresA.length; i++) {
 
   // Guarda divisor atual
@@ -66,7 +66,7 @@ for (let i = 0; i < divisoresA.length; i++) {
   // includes verifica se existe no array
   if (divisoresB.includes(divisorAtual)) {
 
-    // Adiciona divisor comum
+    // Adiciona divisor comum push()
     divisoresComuns.push(divisorAtual);
   }
 }
@@ -75,7 +75,7 @@ for (let i = 0; i < divisoresA.length; i++) {
 console.log("Divisores comuns:");
 console.log(divisoresComuns);
 
-// length mostra tamanho do array
+// length quantidade,medida
 // -1 pega o último valor
 let mdc = divisoresComuns[divisoresComuns.length - 1];
 
